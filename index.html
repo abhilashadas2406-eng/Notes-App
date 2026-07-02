@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <header class="todo-header">
+                <h1>To do list</h1>
+                <p>Keep a track to stay focussed and organised</p>
+            </header>
+            <div class="todo-input-container">
+                <input type="text" id="todo-input" class="todo-input" placeholder="Add a new task">
+                <button id="addTodoBtn" class="add-button">Add</button>
+            </div>
+        
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+            <button class="filter-btn" data-filter="uncompleted">Active</button>
+        </div>
+        <ul class="todo-list-items" id="todo-list-items">
+            <!-- List items will be dynamically added here -->
+        </ul>
+        <div class="todo-footer">
+                <span id="itemsLeft" class="items-left"><span id="remaining-count">0</span> items left</span>
+                <button id="clearCompletedBtn" class="clear-completed">Clear Completed</button>
+            </div>
+    </div>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
